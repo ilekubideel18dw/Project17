@@ -10,7 +10,7 @@ public class Project17 {
 		
 		// I'm going to use while, to create a loop to use more than one option when we use the program.
 		while (loopnum != 1) {
-			System.out.println("Choose an option:");
+			System.out.println("Options:");
 			System.out.println("1.- Enter a positive number and count its even numbers");
 			System.out.println("2.- Enter a positive number and count how many times appears another number");
 			System.out.println("3.- Enter a positive number to return inverted");
@@ -18,6 +18,7 @@ public class Project17 {
 			System.out.println("5.- Enter a sentence and count how many times appear one digit as first letter of a word");
 			System.out.println("6.- Enter a sentence and count how many times appear one digit as last letter of a word");
 			System.out.println("7.- Enter a word to know its palindrome or not");
+			System.out.println("Choose your option:");
 			// Here I use Scanner to use one number between 1 & 7.
 			int enternum = sc.nextInt();
 			
@@ -116,19 +117,21 @@ public class Project17 {
             		// First define some variables, and create a rule to return an error
             		// if we put a non binary number.
             		System.out.println("Enter a binary number:");
-            		int n4 = sc.nextInt();
-            		String n40 = Integer.toString(n4);
-            		n40 = n40.trim();
-            		for (int x4 = n40.length()-1; x4 >= 0;) {
-            			if (n40.charAt(x4) != '0' && n40.charAt(x4) != '1') {
-            				System.out.println("Try Again.");
+            		int num4 = sc.nextInt();
+            		int num40 = 0;
+            		String st4 = Integer.toString(num4);
+            		st4 = st4.trim();
+            		for (int x4 = st4.length()-1; x4 >= 0;) {
+            			if (st4.charAt(x4) != '0' && st4.charAt(x4) != '1') {
+            				System.out.println("Wrong.");
+            			}
+            			else {
+            				num40 = Integer.parseInt(st4,2);
+            				System.out.println("Binary = " + num4 + " Decimal = " + num40);
             			}
         				break;
             		}
-            		String numeroBinario = sc.next();
-            		int num = Integer.parseInt(numeroBinario,2);
-            		System.out.println("Binario = " + numeroBinario + " Decimal = " + num);
-            		
+            	
             		// Here, I create a little program to access to another option
             		// without restart the program
             		System.out.println("Do you want to finish or do you want another option? Enter 0 to finish or another number to continue:");
