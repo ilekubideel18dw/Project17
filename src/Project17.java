@@ -33,6 +33,7 @@ public class Project17 {
         				System.out.println("Wrong.");
         				break;
         			}
+        			//
             		while (num1 != 0) {
             			res1 = num1 % 10;
             			num1 = num1 / 10;
@@ -40,8 +41,12 @@ public class Project17 {
             				even1++;
             			}
             		}
+            		//
             		System.out.print("This number has " + even1 + " even number(s)");
             		System.out.println(" ");
+            		
+            		// Here, I create a little program to access to another option
+            		// without restart the program
             		System.out.println("Do you want to finish or do you want another option? Enter 0 to finish or another number to continue:");
             		int continue1 = sc.nextInt();
             		if (continue1 < 1) {
@@ -73,6 +78,9 @@ public class Project17 {
         				else {
         					System.out.println("The digit appear " + cont2 + " time(s)");
         				}
+        			
+            		// Here, I create a little program to access to another option
+            		// without restart the program
             		System.out.println("Do you want to finish or do you want another option? Enter 0 to finish or another number to continue:");
             		int continue2 = sc.nextInt();
             		if (continue2 < 1) {
@@ -95,6 +103,9 @@ public class Project17 {
             			num3 /= 10;
             		}
             		System.out.println("Inverted number: " + inverted);
+            		
+            		// Here, I create a little program to access to another option
+            		// without restart the program
             		System.out.println("Do you want to finish or do you want another option? Enter 0 to finish or another number to continue:");
             		int continue3 = sc.nextInt();
             		if (continue3 < 1) {
@@ -117,6 +128,9 @@ public class Project17 {
             		String numeroBinario = sc.next();
             		int num = Integer.parseInt(numeroBinario,2);
             		System.out.println("Binario = " + numeroBinario + " Decimal = " + num);
+            		
+            		// Here, I create a little program to access to another option
+            		// without restart the program
             		System.out.println("Do you want to finish or do you want another option? Enter 0 to finish or another number to continue:");
             		int continue4 = sc.nextInt();
             		if (continue4 < 1) {
@@ -140,7 +154,10 @@ public class Project17 {
         				}
         			}
         			System.out.println("There are " + cont5 + " words with " + ch5 + " letter");
-            		System.out.println("Do you want to finish or do you want another option? Enter 0 to finish or another number to continue:");
+            		
+            		// Here, I create a little program to access to another option
+            		// without restart the program
+        			System.out.println("Do you want to finish or do you want another option? Enter 0 to finish or another number to continue:");
             		int continue5 = sc.nextInt();
             		if (continue5 < 1) {
             			loopnum = 1;
@@ -163,7 +180,10 @@ public class Project17 {
         				}
         			}
         			System.out.println("There are " + cont6 + " words with " + ch6 + " letter");
-            		System.out.println("Do you want to finish or do you want another option? Enter 0 to finish or another number to continue:");
+            		
+            		// Here, I create a little program to access to another option
+            		// without restart the program
+        			System.out.println("Do you want to finish or do you want another option? Enter 0 to finish or another number to continue:");
             		int continue6 = sc.nextInt();
             		if (continue6 < 1) {
             			loopnum = 1;
@@ -188,6 +208,9 @@ public class Project17 {
             			System.out.println(st7 + " is a palindrome");
             		else
             			System.out.println(st7 + " is not a palindrome");
+            		
+            		// Here, I create a little program to access to another option
+            		// without restart the program
             		System.out.println("Do you want to finish or do you want another option? Enter 0 to finish or another number to continue:");
             		int continue7 = sc.nextInt();
             		if (continue7 < 1) {
